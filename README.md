@@ -1,6 +1,8 @@
 # Deliberation
 
-Decision-making skills for Claude — seeking unity through discernment rather than consensus through debate.
+Most AI tools give you answers. Deliberation gives you perspectives. When you're facing a decision with real weight — architecture choices, ethical trade-offs, competing approaches — this skill convenes voices that seek clarity instead of racing to conclusions.
+
+[Read how we built this →](https://2389.ai/posts/deliberation-perspectives-not-answers/)
 
 *Inspired by Quaker business practice, adapted for AI-assisted decision-making.*
 
@@ -74,3 +76,9 @@ Skills were developed using TDD for documentation:
 3. Write skill addressing specific failures
 4. Test with skill (verify improvement)
 5. Iterate until solid
+
+---
+
+If Deliberation helped you make a better decision (or avoid a bad one), a ⭐ helps us know it's landing.
+
+Built by [2389](https://2389.ai) · Part of the [Claude Code plugin marketplace](https://github.com/2389-research/claude-plugins)
