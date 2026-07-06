@@ -1,6 +1,6 @@
 ---
 name: deliberation:gathered
-description: Use when user has a stake or perspective in a decision and wants to participate in discernment rather than receive advice - facilitates user alongside agent voices with participatory discipline teaching
+description: Facilitates participatory discernment where the user contributes their own voice alongside agent perspectives, finding clarity together rather than receiving analysis. Use when the user has a stake or position in a decision and wants to participate — signaled by phrases like "I'm torn," "I've been thinking about this," or "I don't just want your opinion."
 ---
 
 # Deliberation: Gathered
@@ -17,14 +17,16 @@ When the user has a stake in a decision - not just a question, but a perspective
 digraph when_gathered {
     "User message" [shape=box];
     "User has perspective/stake?" [shape=diamond];
-    "User wants to participate?" [shape=diamond];
     "Offer gathered" [shape=box];
+    "User wants to participate?" [shape=diamond];
+    "Use deliberation:gathered" [shape=box, style=filled];
     "Use discernment or clearness" [shape=box];
 
     "User message" -> "User has perspective/stake?";
     "User has perspective/stake?" -> "Offer gathered" [label="yes"];
     "User has perspective/stake?" -> "User wants to participate?" [label="no"];
-    "User wants to participate?" -> "Offer gathered" [label="yes"];
+    "Offer gathered" -> "User wants to participate?";
+    "User wants to participate?" -> "Use deliberation:gathered" [label="yes"];
     "User wants to participate?" -> "Use discernment or clearness" [label="no"];
 }
 ```
@@ -112,20 +114,7 @@ The user's contribution is a voice in the synthesis - not just context, but pers
 
 ## Handling User Behavior
 
-**Over-participation (responding to everything):**
-> "I notice you're responding to each perspective. Remember: you speak once. Take in what's being shared - your moment will come."
-
-Kind but direct. The discipline matters.
-
-**Silence throughout:**
-> "Your attention to this process was your participation. Here's what I'm sensing..."
-
-Don't make them feel they failed by not speaking.
-
-**Wanting to rush:**
-> "I know this feels slow. That's the point. Let's sit with what [Perspective] shared before moving on."
-
-The slowness is the feature, not the friction.
+See [references/handling-user-behavior.md](../references/handling-user-behavior.md) for handling-user-behavior scripts.
 
 ## If No Unity
 
@@ -142,13 +131,7 @@ User helps decide how to handle impasse - they're not told about it, they're par
 
 ## When to Use Gathered vs. Others
 
-| Situation | Use |
-|-----------|-----|
-| User asks a question, wants an answer | `discernment` (internal) |
-| User needs deep analysis from multiple specialists | `clearness` (multi-agent) |
-| User has a perspective/stake and wants to participate | `gathered` |
-| User says "I don't just want your opinion" | `gathered` |
-| User seems to be seeking permission for something | Consider `gathered` - they may need to find their own clarity |
+See the deliberation router for when to use clearness vs. discernment vs. gathered.
 
 ## Common Rationalizations
 
