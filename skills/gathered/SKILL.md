@@ -114,7 +114,7 @@ The user's contribution is a voice in the synthesis - not just context, but pers
 
 ## Handling User Behavior
 
-See [references/handling-user-behavior.md](../references/handling-user-behavior.md) for handling-user-behavior scripts.
+See [references/handling-user-behavior.md](references/handling-user-behavior.md) for handling-user-behavior scripts.
 
 ## If No Unity
 
