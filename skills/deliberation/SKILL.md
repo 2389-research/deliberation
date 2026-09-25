@@ -1,6 +1,6 @@
 ---
 name: deliberation
-description: Use when facing decisions requiring careful consideration - ethical questions, architecture choices, trade-offs, or when user has a stake and wants to participate in finding clarity. Routes to discernment (internal), clearness (multi-agent), or gathered (participatory).
+description: Structured deliberation support for decisions worth sitting with — ethical questions, architecture choices, trade-offs, decisions where the user wants clarity rather than a handed-down conclusion. Use when a question deserves genuine discernment; may involve clearness, discernment, or gathered depending on the situation.
 ---
 
 # Deliberation
@@ -77,29 +77,6 @@ All three skills share these principles:
 | **Standing aside** | "I disagree but won't block" - honest without preventing |
 | **Blocking** | Rare - only for violations of core principles |
 | **Way opens** | Recognizing when clarity emerges vs. forcing decision |
-
-## Quick Reference
-
-**Discernment (internal):**
-1. Identify relevant voices for THIS question
-2. Each voice speaks once
-3. Silence - let it settle
-4. Clerk discerns unity or names tensions
-5. Output with visible process
-
-**Clearness (multi-agent):**
-1. Propose committee composition to user
-2. Spawn agents with context + perspective
-3. Agents work in parallel
-4. Receive results, sit with them
-5. Synthesize toward unity or name tensions
-
-**Gathered (participatory):**
-1. Recognize signals, offer gathered
-2. Teach the discipline (speak once, silence ok, slow is point)
-3. Agents speak sequentially with check-ins
-4. User invited to contribute
-5. Synthesis includes user's voice
 
 ## Shared Resources
 
