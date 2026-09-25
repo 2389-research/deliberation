@@ -1,6 +1,6 @@
 ---
 name: deliberation:discernment
-description: Use when facing questions with ethical weight, multiple valid approaches, significant trade-offs, or potential for harm - before answering, convene internal voices to discern rather than conclude
+description: Runs structured internal deliberation before answering, surfacing multiple perspectives and naming tensions rather than jumping to a single conclusion. Use when a question carries ethical weight, has multiple valid approaches, involves significant trade-offs, or risks harm.
 ---
 
 # Deliberation: Discernment
@@ -127,13 +127,6 @@ As clerk, listen for:
 | "The answer is obvious" | If it were obvious, you wouldn't be tempted to skip discernment |
 | "I'm just giving my opinion" | Opinions without process are conclusions without discernment |
 | "Multiple perspectives would confuse them" | Hiding genuine uncertainty is worse than surfacing it |
-
-## What Discernment Is NOT
-
-- **Listing pros and cons then picking one** - That's analysis, not discernment
-- **Adding "but it depends" after your answer** - That's hedging, not discernment
-- **Giving your opinion then asking what they think** - That's deference, not discernment
-- **Presenting options without sitting with them** - That's menu-making, not discernment
 
 ## Example: Before and After
 

@@ -1,6 +1,6 @@
 ---
 name: deliberation:clearness
-description: Use when a question needs parallel deep analysis from multiple perspectives - code reviews, architecture decisions, research synthesis - spawn specialized agents as a clearness committee rather than doing everything in one context
+description: Convenes a clearness committee of specialized perspectives to examine a question with distributed depth rather than single-context breadth. Use when a topic spans multiple domains and deserves thorough parallel analysis — complex code reviews, architecture decisions, or multi-dimensional research.
 ---
 
 # Deliberation: Clearness Committee
@@ -12,25 +12,6 @@ When a question needs more than one perspective can provide in one context, conv
 **Core principle:** Some questions deserve distributed depth, not single-context breadth. Recognize when to convene.
 
 ## When to Convene
-
-```dot
-digraph when_clearness {
-    "Question received" [shape=box];
-    "Needs deep analysis?" [shape=diamond];
-    "Multiple specialized perspectives needed?" [shape=diamond];
-    "Would benefit from parallel work?" [shape=diamond];
-    "Internal discernment sufficient" [shape=box];
-    "Convene clearness committee" [shape=box];
-
-    "Question received" -> "Needs deep analysis?";
-    "Needs deep analysis?" -> "Multiple specialized perspectives needed?" [label="yes"];
-    "Needs deep analysis?" -> "Internal discernment sufficient" [label="no"];
-    "Multiple specialized perspectives needed?" -> "Would benefit from parallel work?" [label="yes"];
-    "Multiple specialized perspectives needed?" -> "Internal discernment sufficient" [label="no"];
-    "Would benefit from parallel work?" -> "Convene clearness committee" [label="yes"];
-    "Would benefit from parallel work?" -> "Internal discernment sufficient" [label="no"];
-}
-```
 
 **Convene for:**
 - Code reviews touching multiple concerns (security, performance, architecture, maintainability)
@@ -139,18 +120,9 @@ As clerk, receive all outputs. Don't rush to synthesis.
 
 Require explicit acknowledgment so silence is intentional.
 
-## When to Use Clearness vs. Discernment
+## When to Use Clearness vs. Others
 
-| Situation | Use |
-|-----------|-----|
-| Quick ethical question | `discernment` (internal voices) |
-| Trade-off with 2-3 clear options | `discernment` |
-| Complex code review | `clearness` (parallel deep analysis) |
-| Architecture decision with many dimensions | `clearness` |
-| Research requiring exploration | `clearness` |
-| Question where you're tempted to write 2000 words covering everything | `clearness` |
-
-**Rule of thumb:** If each perspective would benefit from its own context and time, convene a committee.
+See the deliberation router for when to use clearness vs. discernment vs. gathered.
 
 ## Common Rationalizations
 
